@@ -3,7 +3,7 @@ package com.oracle.problem;
 import java.util.Scanner;
 
 /**
- * Needs to be tested
+ * 
  * @author vivek sagar
  *
  */
@@ -14,7 +14,7 @@ public class MatrixBoundary {
 
 			System.out.println("Enter the number of rows:");
 			int row = scanner.nextInt();
-			System.out.println("\nEnter the number of rows:");
+			System.out.println("Enter the number of rows:");
 			int column = scanner.nextInt();
 
 			int[][] orignalArr = new int[row][column];
