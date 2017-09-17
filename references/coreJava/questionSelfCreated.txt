@@ -1,0 +1,14 @@
+1. Try with Finally -- Do you know about the new feature in Java7 try with resources block.What was the need to this enhancements in java. Which kind of resources are these. If in case when there is exception in both try block and while closing the resource which exception will be propagated. How can we get the not propagated exceptions. 
+
+if you are writing the finally block yourself and both your try and finally block throw exception then the exception from try block is supressed.
+
+While on the other hand if you are using try-with-resources statement and exception is thrown by both try block and try-with-resources statement then in this case the exception from try-with-resources statement is suppressed.
+
+Suppressed Exceptions
+
+An exception can be thrown from the block of code associated with the try-with-resources statement. In the example writeToFileZipFileContents, an exception can be thrown from the try block, and up to two exceptions can be thrown from the try-with-resources statement when it tries to close the ZipFile and BufferedWriter objects. If an exception is thrown from the try block and one or more exceptions are thrown from the try-with-resources statement, then those exceptions thrown from the try-with-resources statement are suppressed, and the exception thrown by the block is the one that is thrown by the writeToFileZipFileContents method. You can retrieve these suppressed exceptions by calling the Throwable.getSuppressed method from the exception thrown by the try block.Throwable[] java.lang.Throwable.getSuppressed()
+
+
+=======================================================================================================================================================================
+
+  
