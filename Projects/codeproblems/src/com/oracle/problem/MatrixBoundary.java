@@ -2,6 +2,11 @@ package com.oracle.problem;
 
 import java.util.Scanner;
 
+/**
+ * Needs to be tested
+ * @author vivek sagar
+ *
+ */
 public class MatrixBoundary {
 
 	public static void main(String[] args) {
@@ -16,38 +21,14 @@ public class MatrixBoundary {
 			int[][] traceArr = new int[row][column];
 			int sumOfZero = 0;
 			int sumOfOne = 0;
-			orignalArr[0][0] = 1;
-			traceArr[0][0] = 0;
-			orignalArr[0][1] = 0;
-			traceArr[0][1] = 0;
-			orignalArr[0][2] = 1;
-			traceArr[0][2] = 0;
-			orignalArr[1][0] = 0;
-			traceArr[1][0] = 0;
-			orignalArr[1][1] = 0;
-			traceArr[1][1] = 0;
-			orignalArr[1][2] = 0;
-			traceArr[1][2] = 0;
-			orignalArr[2][0] = 1;
-			traceArr[2][0] = 0;
-			orignalArr[2][1] = 0;
-			traceArr[2][1] = 0;
-			orignalArr[2][2] = 1;
-			traceArr[2][2] = 0;
-			/*
-			 * orignalArr[0][0] = 1; traceArr[0][0] = 0; orignalArr[0][1] = 0;
-			 * traceArr[0][1] = 0; orignalArr[0][2] = 1; traceArr[0][2] = 0;
-			 * orignalArr[0][3] = 1; traceArr[0][3] = 0;
-			 * 
-			 * orignalArr[1][0] = 1; traceArr[1][0] = 0; orignalArr[1][1] = 1;
-			 * traceArr[1][1] = 0; orignalArr[1][2] = 0; traceArr[1][2] = 0;
-			 * orignalArr[1][3] = 0; traceArr[1][3] = 0;
-			 * 
-			 * orignalArr[2][0] = 0; traceArr[2][0] = 0; orignalArr[2][1] = 1;
-			 * traceArr[2][1] = 0; orignalArr[2][2] = 0; traceArr[2][2] = 0;
-			 * orignalArr[2][3] = 0; traceArr[2][3] = 0;
-			 */
-
+			for(int i=0;i<row;i++){
+				for(int j=0;j<column;j++){
+				 System.out.println("Enter the value for Matrix["+i+"]["+j+"]:");
+				 orignalArr[i][j] = scanner.nextInt();
+				 traceArr[i][j]=0;
+				}
+			}
+			
 			for (int i = 0; i < row; i++) {
 				for (int j = 0; j < column; j++) {
 
