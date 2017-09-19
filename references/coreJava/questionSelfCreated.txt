@@ -18,4 +18,49 @@ If Yes, then why. Any example. HTTPServlet.
 Yes we can have an abstract class without Abstract Methods as both are independent concepts. Declaring a class abstract means that it can not be instantiated on its own and can only be sub classed. Declaring a method abstract means that Method will be defined in the subclass.
 
 https://stackoverflow.com/questions/4811678/defining-an-abstract-class-without-any-abstract-methods
-========================================================================================================================================================
+=================================================================3=======================================================================================
+In Java 8, now the interface can have concrete method implementations as default implementations. 
+
+public interface TestJava8nterface1 {
+
+	public void existingMethod();
+	
+	default public void newMethod(){
+		System.out.println("Default Method from TestJava8Interface1");
+	}
+}
+
+
+public interface TestJava8Interface2 {
+	
+	default public void newMethod(){
+		System.out.println("Default Method from TestJava8Interface2");
+	}
+
+}
+
+
+
+public class ClassA implements TestJava8nterface1, TestJava8Interface2{
+
+	@Override
+	public void existingMethod() {
+		// TODO Auto-generated method stub
+		
+	}
+}
+
+
+
+public class TestMain {
+	public static void main(String[] args) {
+		
+		TestJava8nterface1 obj1 = new ClassA();
+		obj1.newMethod();
+	}
+
+}
+
+which default method will get called. In case of error how can we avoid this situation.
+=========================================================================================================================================================
+	
