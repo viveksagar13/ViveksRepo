@@ -1,0 +1,9 @@
+What all inheritance strategy we have in JPA for mapping Java inheritence hierarchies to database table - 
+
+InheritanceType.SINGLE_TABLE
+InheritanceType.TABLE_PER_CLASS 
+InheritanceType.JOINED
+
+https://www.tutorialspoint.com/jpa/jpa_advanced_mappings.htm
+https://www.thoughts-on-java.org/complete-guide-inheritance-strategies-jpa-hibernate/
+=====================================================================
